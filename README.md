@@ -37,6 +37,8 @@
 
 ### 音乐
 - 网易云音乐下载：https://api.oick.cn/wyy/api.php?id=1966155051 。入参:[id:网易云歌曲ID]
+- 网易云音乐热门评论：https://api.uomg.com/api/comments.163?format=json&mid=1 。入参:[format:json/text;mid:网易云歌单ID]
+- 全民K歌音乐下载：https://api.uomg.com/api/get.kg?songurl=https://node.kg.qq.com/play?s=YaCv8EYfJunVWYcH 。入参:[songurl:要解析的歌曲链接,format:输出方式json,text,file,默认:json]
 
 ### 语音
 - 文字转语言：https://api.oick.cn/txt/apiz.php?text=零七生活&spd=1 。入参:[text:转换的文字或英文,长度<=1000个字符,spd:语速,取值0-15,默认为5中语速,越大越快]
@@ -46,6 +48,11 @@
 
 ### 域名
 - 检测域名是否拦截：https://api.oick.cn/t/api.php?url=baidu.com 。入参:[url:要查询的域名]
+- 防红链接：https://api.uomg.com/api/long2fh?dwzapi=urlcn&url=http://qrpay.uomg.com 。入参:[url:需要进行防红的长网址,dwzapi:选择缩短接口,tcn,dwzcn,urlcn,suoim,mrwso]
+- 检测域名是否被墙：https://api.uomg.com/api/ck_qiang?domain=google.com 。入参:[domain:查询的域名]
+
+### IP
+- 本机ip：https://api.ipify.org?format=json 或者 https://api64.ipify.org?format=json 。入参:[format:text|json|jsonp]
 
 ### 电话
 - 骚扰电话检测：https://api.oick.cn/phone/api.php?phone=15677246297 。入参:[phone:手机号]
